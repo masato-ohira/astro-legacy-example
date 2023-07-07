@@ -1,0 +1,7 @@
+---
+const { name } = Astro.props
+---
+
+<Fragment set:html={`<!-- start ssi ${name} -->`} />
+<Fragment set:html={`<!--#include virtual="/ssi/${name}/index.html" -->`} />
+<Fragment set:html={`<!-- end ssi ${name} -->`} />

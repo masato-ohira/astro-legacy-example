@@ -1,0 +1,52 @@
+---
+import WpHead from '@/components/ui/wp/WpHead.astro'
+import WpTopNav from '@/components/ui/wp/WpTopNav.astro'
+import WpHeader from '@/components/ui/wp/WpHeader.astro'
+import WpSearch from '@/components/ui/wp/WpSearch.astro'
+import WpSidebar from '@/components/ui/wp/WpSidebar.astro'
+import WpFooter from '@/components/ui/wp/WpFooter.astro'
+import WpScripts from '@/components/ui/wp/WpScripts.astro'
+import SSI from '@/components/SSI.astro'
+
+export interface Props {
+  meta: {
+    title: string
+    id: string
+  }
+}
+
+const isDev = process.env.NODE_ENV == 'development'
+const { meta } = Astro.props
+---
+
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>
+      {meta.title}
+    </title>
+    {isDev ? <WpHead /> : <SSI name={'cmn-head'} />}
+  </head><body
+    class='home blog customizer-styles-applied highlander-enabled highlander-light'
+  >
+    <a class='skip-link screen-reader-text' href='#main'>Skip to content</a>
+
+    {isDev ? <WpTopNav /> : <SSI name={'top-nav'} />}
+    {isDev ? <WpSearch /> : <SSI name={'search'} />}
+    {isDev ? <WpHeader /> : <SSI name={'header'} />}
+
+    <div class='wrapper section-inner'>
+      <main id='main' class='content'>
+        <slot />
+      </main>
+
+      {isDev ? <WpSidebar /> : <SSI name={'sidebar'} />}
+
+      <div class='clear'></div>
+    </div>
+
+    {isDev ? <WpFooter /> : <SSI name={'footer'} />}
+    {isDev ? <WpScripts /> : <SSI name={'footer-scripts'} />}
+  </body>
+</html>

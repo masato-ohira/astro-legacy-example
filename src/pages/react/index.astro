@@ -1,0 +1,13 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { ReactPage } from '@/components/views/ReactPage'
+const meta = {
+  title: 'React App',
+  id: 'index',
+}
+const isDev = process.env.NODE_ENV == 'development'
+---
+
+<Layout meta={meta}>
+  <ReactPage client:load />
+</Layout>

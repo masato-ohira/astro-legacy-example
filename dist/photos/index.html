@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      React App
+    </title>
+    <!-- start ssi cmn-head -->
+<!--#include virtual="/ssi/cmn-head/index.html" -->
+<!-- end ssi cmn-head -->
+  <link rel="stylesheet" href="/_astro/index.d70e99b9.css" /></head><body class="home blog customizer-styles-applied highlander-enabled highlander-light">
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+    <!-- start ssi top-nav -->
+<!--#include virtual="/ssi/top-nav/index.html" -->
+<!-- end ssi top-nav -->
+    <!-- start ssi search -->
+<!--#include virtual="/ssi/search/index.html" -->
+<!-- end ssi search -->
+    <!-- start ssi header -->
+<!--#include virtual="/ssi/header/index.html" -->
+<!-- end ssi header -->
+
+    <div class="wrapper section-inner">
+      <main id="main" class="content">
+        
+  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var d;{let h={0:t=>t,1:t=>JSON.parse(t,a),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,a)),5:t=>new Set(JSON.parse(t,a)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},a=(t,e)=>{if(t===""||!Array.isArray(e))return e;let[r,n]=e;return r in h?h[r](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(d=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=async()=>{var o;if(!this.hydrator||!this.isConnected)return;let e=(o=this.parentElement)==null?void 0:o.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),n={},c=this.querySelectorAll("template[data-astro-template]");for(let s of c){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("data-astro-template")||"default"]=s.innerHTML,s.remove())}for(let s of r){let i=s.closest(this.tagName);i!=null&&i.isSameNode(this)&&(n[s.getAttribute("name")||"default"]=s.innerHTML)}let l=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),a):{};await this.hydrator(this)(this.Component,l,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((e,r)=>{r.disconnect(),setTimeout(()=>this.childrenConnectedCallback(),0)}).observe(this,{childList:!0})}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let n=this.getAttribute("renderer-url"),[c,{default:l}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),o=this.getAttribute("component-export")||"default";if(!o.includes("."))this.Component=c[o];else{this.Component=c;for(let s of o.split("."))this.Component=this.Component[s]}return this.hydrator=l,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},d.observedAttributes=["props"],d))}})();</script><astro-island uid="Z1szNGE" prefix="r0" component-url="/_astro/PhotosPage.c4f3cf9f.js" component-export="PhotosPage" renderer-url="/_astro/client.6c093161.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;PhotosPage&quot;,&quot;value&quot;:true}" await-children=""><swiper-container slides-per-view="1" navigation="true" pagination="true" loop="true"><swiper-slide><style data-emotion="css 1q05ojo">.css-1q05ojo{object-fit:cover;aspect-ratio:16/9;}</style><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/e76494ac.jpeg?w=1632" class="chakra-image css-1q05ojo"/></swiper-slide><swiper-slide><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/tumblr_o04s4c8ci11sfie3io1_1280.jpg" class="chakra-image css-1q05ojo"/></swiper-slide><swiper-slide><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/tumblr_nzgppclzet1sfie3io1_1280.jpg" class="chakra-image css-1q05ojo"/></swiper-slide><swiper-slide><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/photo-1422157245273-e08b638b4b00.jpeg?w=1632" class="chakra-image css-1q05ojo"/></swiper-slide><swiper-slide><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/photo-1422157245273-e08b638b4b00.jpeg?w=1632" class="chakra-image css-1q05ojo"/></swiper-slide><swiper-slide><img alt="" src="https://rowlingdemo.files.wordpress.com/2011/07/photo-1422393462206-207b0fbd8d6b.jpeg?w=1632" class="chakra-image css-1q05ojo"/></swiper-slide></swiper-container></astro-island>
+
+      </main>
+
+      <!-- start ssi sidebar -->
+<!--#include virtual="/ssi/sidebar/index.html" -->
+<!-- end ssi sidebar -->
+
+      <div class="clear"></div>
+    </div>
+
+    <!-- start ssi footer -->
+<!--#include virtual="/ssi/footer/index.html" -->
+<!-- end ssi footer -->
+    <!-- start ssi footer-scripts -->
+<!--#include virtual="/ssi/footer-scripts/index.html" -->
+<!-- end ssi footer-scripts -->
+  </body>
+</html>

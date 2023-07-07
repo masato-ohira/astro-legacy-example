@@ -1,0 +1,623 @@
+<script is:inline type='text/javascript'>
+var infiniteScroll = {
+  settings: {
+    id: 'infinite-wrap',
+    ajaxurl: 'https://rowlingdemo.wordpress.com/?infinity=scrolling',
+    type: 'click',
+    wrapper: false,
+    wrapper_class: 'infinite-wrap',
+    footer: 'page',
+    click_handle: '1',
+    text: 'Older posts',
+    totop: 'Scroll back to top',
+    currentday: '07.07.11',
+    order: 'DESC',
+    scripts: [],
+    styles: [],
+    google_analytics: false,
+    offset: 1,
+    history: {
+      host: 'rowlingdemo.wordpress.com',
+      path: '/page/%d/',
+      use_trailing_slashes: true,
+      parameters:
+        '?demo=true&iframe=true&theme_preview=true&calypso_token=32aae868-a1cd-4790-828b-901101722ba7',
+    },
+    query_args: {
+      error: '',
+      m: '',
+      p: 0,
+      post_parent: '',
+      subpost: '',
+      subpost_id: '',
+      attachment: '',
+      attachment_id: 0,
+      name: '',
+      pagename: '',
+      page_id: 0,
+      second: '',
+      minute: '',
+      hour: '',
+      day: 0,
+      monthnum: 0,
+      year: 0,
+      w: 0,
+      category_name: '',
+      tag: '',
+      cat: '',
+      tag_id: '',
+      author: '',
+      author_name: '',
+      feed: '',
+      tb: '',
+      paged: 0,
+      meta_key: '',
+      meta_value: '',
+      preview: '',
+      s: '',
+      sentence: '',
+      title: '',
+      fields: '',
+      menu_order: '',
+      embed: '',
+      category__in: [],
+      category__not_in: [],
+      category__and: [],
+      post__in: [],
+      post__not_in: [],
+      post_name__in: [],
+      tag__in: [],
+      tag__not_in: [],
+      tag__and: [],
+      tag_slug__in: [],
+      tag_slug__and: [],
+      post_parent__in: [],
+      post_parent__not_in: [],
+      author__in: [],
+      author__not_in: [],
+      search_columns: [],
+      lazy_load_term_meta: false,
+      posts_per_page: 10,
+      ignore_sticky_posts: false,
+      suppress_filters: false,
+      cache_results: true,
+      update_post_term_cache: true,
+      update_menu_item_cache: false,
+      update_post_meta_cache: true,
+      post_type: '',
+      nopaging: false,
+      comments_per_page: '50',
+      no_found_rows: false,
+      order: 'DESC',
+    },
+    query_before: '2023-07-07 08:04:00',
+    last_post_date: '2011-07-07 15:35:05',
+    body_class: 'infinite-scroll',
+    loading_text: 'Loading new page',
+    stats:
+      'blog=107823757&v=wpcom&tz=0&user_id=0&subd=rowlingdemo&x_pagetype=infinite-click',
+  },
+}
+</script>
+<!--  -->
+<script
+  is:inline
+  src='//0.gravatar.com/js/gprofiles.js?ver=202327a38e82b72ca7b7f7489a6e0d2e13bda8e1ecaa4ef340fc6b01754378626ee67e'
+  id='grofiles-cards-js'></script>
+<script id='wpgroho-js-extra'>
+var WPGroHo = { my_hash: '' }
+</script>
+<script
+  is:inline
+  crossorigin='anonymous'
+  type='text/javascript'
+  src='https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'
+></script>
+
+<script is:inline>
+  // Initialize and attach hovercards to all gravatars
+  ; (function () {
+    function init() {
+      if (typeof Gravatar === 'undefined') {
+        return
+      }
+
+      if (typeof Gravatar.init !== 'function') {
+        return
+      }
+
+      Gravatar.profile_cb = function (hash, id) {
+        WPGroHo.syncProfileData(hash, id)
+      }
+
+      Gravatar.my_hash = WPGroHo.my_hash
+      Gravatar.init('body', '#wp-admin-bar-my-account')
+    }
+
+    if (document.readyState !== 'loading') {
+      init()
+    } else {
+      document.addEventListener('DOMContentLoaded', init)
+    }
+  })()
+</script>
+
+<div style='display:none'></div>
+<div id='jp-carousel-loading-overlay'>
+  <div id='jp-carousel-loading-wrapper'>
+    <span id='jp-carousel-library-loading'>&nbsp;</span>
+  </div>
+</div>
+<div class='jp-carousel-overlay' style='display: none;'>
+  <div class='jp-carousel-container'>
+    <!-- The Carousel Swiper -->
+    <div
+      class='jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions'
+      itemscope
+      itemtype='https://schema.org/ImageGallery'
+    >
+      <div class='jp-carousel swiper-wrapper'></div>
+      <div class='jp-swiper-button-prev swiper-button-prev'>
+        <svg
+          width='25'
+          height='24'
+          viewBox='0 0 25 24'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <mask
+            id='maskPrev'
+            mask-type='alpha'
+            maskUnits='userSpaceOnUse'
+            x='8'
+            y='6'
+            width='9'
+            height='12'
+          >
+            <path
+              d='M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z'
+              fill='white'></path>
+          </mask>
+          <g mask='url(#maskPrev)'>
+            <rect x='0.579102' width='23.8823' height='24' fill='#FFFFFF'
+            ></rect>
+          </g>
+        </svg>
+      </div>
+      <div class='jp-swiper-button-next swiper-button-next'>
+        <svg
+          width='25'
+          height='24'
+          viewBox='0 0 25 24'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <mask
+            id='maskNext'
+            mask-type='alpha'
+            maskUnits='userSpaceOnUse'
+            x='8'
+            y='6'
+            width='8'
+            height='12'
+          >
+            <path
+              d='M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z'
+              fill='white'></path>
+          </mask>
+          <g mask='url(#maskNext)'>
+            <rect x='0.34375' width='23.8822' height='24' fill='#FFFFFF'></rect>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <!-- The main close buton -->
+    <div class='jp-carousel-close-hint'>
+      <svg
+        width='25'
+        height='24'
+        viewBox='0 0 25 24'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <mask
+          id='maskClose'
+          mask-type='alpha'
+          maskUnits='userSpaceOnUse'
+          x='5'
+          y='5'
+          width='15'
+          height='14'
+        >
+          <path
+            d='M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z'
+            fill='white'></path>
+        </mask>
+        <g mask='url(#maskClose)'>
+          <rect x='0.409668' width='23.8823' height='24' fill='#FFFFFF'></rect>
+        </g>
+      </svg>
+    </div>
+    <!-- Image info, comments and meta -->
+    <div class='jp-carousel-info'>
+      <div class='jp-carousel-info-footer'>
+        <div class='jp-carousel-pagination-container'>
+          <div class='jp-swiper-pagination swiper-pagination'></div>
+          <div class='jp-carousel-pagination'></div>
+        </div>
+        <div class='jp-carousel-photo-title-container'>
+          <h2 class='jp-carousel-photo-caption'></h2>
+        </div>
+        <div class='jp-carousel-photo-icons-container'>
+          <a
+            href='#'
+            class='jp-carousel-icon-btn jp-carousel-icon-info'
+            aria-label='Toggle photo metadata visibility'
+          >
+            <span class='jp-carousel-icon'>
+              <svg
+                width='25'
+                height='24'
+                viewBox='0 0 25 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <mask
+                  id='maskInfo'
+                  mask-type='alpha'
+                  maskUnits='userSpaceOnUse'
+                  x='2'
+                  y='2'
+                  width='21'
+                  height='20'
+                >
+                  <path
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z'
+                    fill='white'></path>
+                </mask>
+                <g mask='url(#maskInfo)'>
+                  <rect x='0.8125' width='23.8823' height='24' fill='#FFFFFF'
+                  ></rect>
+                </g>
+              </svg>
+            </span>
+          </a>
+          <a
+            href='#'
+            class='jp-carousel-icon-btn jp-carousel-icon-comments'
+            aria-label='Toggle photo comments visibility'
+          >
+            <span class='jp-carousel-icon'>
+              <svg
+                width='25'
+                height='24'
+                viewBox='0 0 25 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <mask
+                  id='maskComments'
+                  mask-type='alpha'
+                  maskUnits='userSpaceOnUse'
+                  x='2'
+                  y='2'
+                  width='21'
+                  height='20'
+                >
+                  <path
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z'
+                    fill='white'></path>
+                </mask>
+                <g mask='url(#maskComments)'>
+                  <rect x='0.34668' width='23.8823' height='24' fill='#FFFFFF'
+                  ></rect>
+                </g>
+              </svg>
+
+              <span
+                class='jp-carousel-has-comments-indicator'
+                aria-label='This image has comments.'></span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class='jp-carousel-info-extra'>
+        <div class='jp-carousel-info-content-wrapper'>
+          <div class='jp-carousel-photo-title-container'>
+            <h2 class='jp-carousel-photo-title'></h2>
+          </div>
+          <div class='jp-carousel-comments-wrapper'>
+            <div id='jp-carousel-comments-loading'>
+              <span>Loading Comments...</span>
+            </div>
+            <div class='jp-carousel-comments'></div>
+            <div id='jp-carousel-comment-form-container'>
+              <span id='jp-carousel-comment-form-spinner'>&nbsp;</span>
+              <div id='jp-carousel-comment-post-results'></div>
+              <form id='jp-carousel-comment-form'>
+                <label
+                  for='jp-carousel-comment-form-comment-field'
+                  class='screen-reader-text'>Write a Comment...</label
+                >
+                <textarea
+                  name='comment'
+                  class='jp-carousel-comment-form-field jp-carousel-comment-form-textarea'
+                  id='jp-carousel-comment-form-comment-field'
+                  placeholder='Write a Comment...'></textarea>
+                <div id='jp-carousel-comment-form-submit-and-info-wrapper'>
+                  <div id='jp-carousel-comment-form-commenting-as'>
+                    <fieldset>
+                      <label for='jp-carousel-comment-form-email-field'
+                        >Email (Required)</label
+                      >
+                      <input
+                        type='text'
+                        name='email'
+                        class='jp-carousel-comment-form-field jp-carousel-comment-form-text-field'
+                        id='jp-carousel-comment-form-email-field'
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <label for='jp-carousel-comment-form-author-field'
+                        >Name (Required)</label
+                      >
+                      <input
+                        type='text'
+                        name='author'
+                        class='jp-carousel-comment-form-field jp-carousel-comment-form-text-field'
+                        id='jp-carousel-comment-form-author-field'
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <label for='jp-carousel-comment-form-url-field'
+                        >Website</label
+                      >
+                      <input
+                        type='text'
+                        name='url'
+                        class='jp-carousel-comment-form-field jp-carousel-comment-form-text-field'
+                        id='jp-carousel-comment-form-url-field'
+                      />
+                    </fieldset>
+                  </div>
+                  <input
+                    type='submit'
+                    name='submit'
+                    class='jp-carousel-comment-form-button'
+                    id='jp-carousel-comment-form-button-submit'
+                    value='Post Comment'
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class='jp-carousel-image-meta'>
+            <div class='jp-carousel-title-and-caption'>
+              <div class='jp-carousel-photo-info'>
+                <h3 class='jp-carousel-caption' itemprop='caption description'>
+                </h3>
+              </div>
+
+              <div class='jp-carousel-photo-description'></div>
+            </div>
+            <ul class='jp-carousel-image-exif' style='display: none;'></ul>
+            <a
+              class='jp-carousel-image-download'
+              target='_blank'
+              style='display: none;'
+            >
+              <svg
+                width='25'
+                height='24'
+                viewBox='0 0 25 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <mask
+                  id='mask0'
+                  mask-type='alpha'
+                  maskUnits='userSpaceOnUse'
+                  x='3'
+                  y='3'
+                  width='19'
+                  height='18'
+                >
+                  <path
+                    fill-rule='evenodd'
+                    clip-rule='evenodd'
+                    d='M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z'
+                    fill='white'></path>
+                </mask>
+                <g mask='url(#mask0)'>
+                  <rect x='0.870605' width='23.8823' height='24' fill='#FFFFFF'
+                  ></rect>
+                </g>
+              </svg>
+              <span class='jp-carousel-download-text'></span>
+            </a>
+            <div class='jp-carousel-image-map' style='display: none;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<link
+  crossorigin='anonymous'
+  rel='stylesheet'
+  id='all-css-0-2'
+  href='https://s0.wp.com/_static/??-eJyljc0KgzAQhF+o6RKKoofSZ0mTRaKbH7JZxLcvgebqQS8D3zB8A3tWNsWKsUIQlUkWHxlWrNnY7c8QUmrhhJDBmpKEkYB3n7Gor0RH+LTMD7hh66NeXBVWT+jUYoiwHGfUDj7hrcdp0C89zcP6A3gpZXE=&cssminify=yes'
+  type='text/css'
+  media='all'
+/>
+<script is:inline id='jetpack-carousel-js-extra'>
+var jetpackSwiperLibraryPath = {
+  url: 'https://s0.wp.com/wp-content/mu-plugins/jetpack-plugin/moon/_inc/build/carousel/swiper-bundle.min.js',
+}
+var jetpackCarouselStrings = {
+  widths: [370, 700, 1000, 1200, 1400, 2000],
+  is_logged_in: '',
+  lang: 'en',
+  ajaxurl: 'https://rowlingdemo.wordpress.com/wp-admin/admin-ajax.php',
+  nonce: 'd6255375ae',
+  display_exif: '1',
+  display_comments: '1',
+  single_image_gallery: '1',
+  single_image_gallery_media_file: '',
+  background_color: 'black',
+  comment: 'Comment',
+  post_comment: 'Post Comment',
+  write_comment: 'Write a Comment...',
+  loading_comments: 'Loading Comments...',
+  download_original:
+    'View full size <span class="photo-size">{0}<span class="photo-size-times">\u00d7</span>{1}</span>',
+  no_comment_text: 'Please be sure to submit some text with your comment.',
+  no_comment_email: 'Please provide an email address to comment.',
+  no_comment_author: 'Please provide your name to comment.',
+  comment_post_error:
+    'Sorry, but there was an error posting your comment. Please try again later.',
+  comment_approved: 'Your comment was approved.',
+  comment_unapproved: 'Your comment is in moderation.',
+  camera: 'Camera',
+  aperture: 'Aperture',
+  shutter_speed: 'Shutter Speed',
+  focal_length: 'Focal Length',
+  copyright: 'Copyright',
+  comment_registration: '0',
+  require_name_email: '1',
+  login_url:
+    'https://rowlingdemo.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Frowlingdemo.wordpress.com%2F2011%2F07%2F07%2Fblack-white-photography-making-a-comeback%2F',
+  blog_id: '107823757',
+  meta_data: [
+    'camera',
+    'aperture',
+    'shutter_speed',
+    'focal_length',
+    'copyright',
+  ],
+  stats_query_args: 'blog=107823757&v=wpcom&tz=0&user_id=0&subd=rowlingdemo',
+  is_public: '0',
+}
+</script>
+<script
+  is:inline
+  crossorigin='anonymous'
+  type='text/javascript'
+  src='https://s0.wp.com/_static/??-eJydkFFOxDAMRC9E1gLBih/EUVCauMGtY0dxQndvT5EoQssKKvz37Bl7ZFiKCyoNpcFkEPGNApbTYbIb+DbK3RXuicRgwlZ8mD8ZsqrAC0mAoRNHIBlJqKGzUJV54/Mhk1xuba+Y0aD0AaouTJI+MthMxa0wu1FDNzfSjzjXjSPjyZgi1n36qH1gbL40TbrPklgHz///TvBVuyF/6bbGtffsX9uIMbrkmbGef6M/zmxp3FKC5gtcfc/56fb4+HB/vFtregdjbNcQ'
+></script>
+<script is:inline type='text/javascript'>
+  // <![CDATA[
+  ; (function () {
+    try {
+      if (window.external && 'msIsSiteMode' in window.external) {
+        if (window.external.msIsSiteMode()) {
+          var jl = document.createElement('script')
+          jl.type = 'text/javascript'
+          jl.async = true
+          jl.src = '/wp-content/plugins/ie-sitemode/custom-jumplist.php'
+          var s = document.getElementsByTagName('script')[0]
+          s.parentNode.insertBefore(jl, s)
+        }
+      }
+    } catch (e) { }
+  })()
+  // ]]>
+</script>
+<script is:inline type='text/javascript'>
+  ; (function () {
+    var extend = function (out) {
+      out = out || {}
+
+      for (var i = 1; i < arguments.length; i++) {
+        if (!arguments[i]) continue
+
+        for (var key in arguments[i]) {
+          if (arguments[i].hasOwnProperty(key)) out[key] = arguments[i][key]
+        }
+      }
+
+      return out
+    }
+    extend(window.infiniteScroll.settings.scripts, [
+      'jquery-core',
+      'jquery-migrate',
+      'jquery',
+      'jetpack-iframe-embed',
+      'mobile-useragent-info',
+      'rlt-proxy',
+      'grofiles-cards',
+      'wpgroho',
+      'devicepx',
+      'the-neverending-homepage',
+      'skip_link_fix',
+      'flexslider',
+      'doubletap',
+      'global',
+      'jetpack-carousel',
+      'tiled-gallery',
+      'carousel-wpcom',
+    ])
+    extend(window.infiniteScroll.settings.styles, [
+      'the-neverending-homepage',
+      'wp-block-library',
+      'jetpack-videopress-video-block-view',
+      'mediaelement',
+      'wp-mediaelement',
+      'jetpack-layout-grid',
+      'jetpack-ratings',
+      'coblocks-frontend',
+      'classic-theme-styles',
+      'wpcom-core-compat-playlist-styles',
+      'wpcom-bbpress2-staff-css',
+      'fontawesome',
+      'style',
+      'geo-location-flair',
+      'reblogging',
+      'a8c-global-print',
+      'h4-global',
+      'global-styles',
+      'fonts',
+      'jetpack-global-styles-frontend-style',
+      'jetpack-carousel-swiper-css',
+      'jetpack-carousel',
+      'tiled-gallery',
+    ])
+  })()
+</script>
+<span id='infinite-aria' aria-live='assertive'></span>
+<script is:inline>
+if ('object' === typeof wpcom_mobile_user_agent_info) {
+  wpcom_mobile_user_agent_info.init()
+  var mobileStatsQueryString = ''
+
+  if (false !== wpcom_mobile_user_agent_info.matchedPlatformName)
+    mobileStatsQueryString +=
+      '&x_' +
+      'mobile_platforms' +
+      '=' +
+      wpcom_mobile_user_agent_info.matchedPlatformName
+
+  if (false !== wpcom_mobile_user_agent_info.matchedUserAgentName)
+    mobileStatsQueryString +=
+      '&x_' +
+      'mobile_devices' +
+      '=' +
+      wpcom_mobile_user_agent_info.matchedUserAgentName
+
+  if (wpcom_mobile_user_agent_info.isIPad())
+    mobileStatsQueryString += '&x_' + 'ipad_views' + '=' + 'views'
+
+  if ('' != mobileStatsQueryString) {
+    new Image().src =
+      document.location.protocol +
+      '//pixel.wp.com/g.gif?v=wpcom-no-pv' +
+      mobileStatsQueryString +
+      '&baba=' +
+      Math.random()
+  }
+}
+</script>
